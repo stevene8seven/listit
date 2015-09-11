@@ -1,43 +1,70 @@
+/*outline: red solid thin;*/
+
 .main {
-	border: 2px solid red;
+	
+	margin: 1% 25%;
+	
+	
+
 }
 
-.logo, .textbox, .items, .remove-items{
-	 border: 2px solid #8AC007;
-	 color: ghostwhite;
+/*.logo, .items{
+	 outline: blueviolet solid thick;
 	}
 
+.textbox{
+		outline: green solid thick;
+}*/
+
 body{
-	background-color: black;
+	background-color: white;
+	background-image: url("https://images.unsplash.com/photo-1414919823178-e9d9d0afd0ac?q=80&fm=jpg&s=fdeb3545020d28860257b9106ba15872");
+	 background-repeat: no-repeat;
+	 background-size: 80%;
+	 background-position: center 15%;
+	 padding-top: 10%;
+    
+	
 }
 /*LOGO*/
 
 
 .logo{
+	font-family: 'Satisfy', cursive;
+	font-weight: 500;
+	font-size: 2em;
+	color: white;
 	text-align: center;
 	margin-top:5%;
-	margin-bottom: 1%;
+	
+	text-shadow: 0px -4px 12px black;
 }
 
-.logo h1{
-	margin-top: 5%;
 }
 .logo img{
-	margin-left: 13%;
+	margin-top: 2%;
 }
 
 /*TEXTBOX*/
 .textbox{
 	text-align: center;
+	margin-bottom: 5%;
+	margin-left: 10%;
+	padding: 2.5%;
 }
 
 .textbox button{
 	margin-right: 15%;
+	color: black;
 }
 
 /*ITEMS*/
 .items ul{
-	margin-left: 35%;
+	font-family: 'Satisfy', cursive;
+	font-weight: 200;
+	font-size: 1em;
+	color: white;
+	margin-left: 40%;
 }
 
 /*REMOVE ITEMS*/
