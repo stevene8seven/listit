@@ -13,18 +13,16 @@
 		</div>
 <!--TEXTBOX-->
 		<form class="textbox">
+			<div id="error">No Input Value!</div>
 			<br>
-			<input type="text" name="Enter Item Here">
-			<button>+</button>
+			<input id="input_text" type="text" name="Enter Item Here">
+			<button id="add">+</button>
 		</form>
 <!--ITEMS-->
-		<div class="items">
-			<ul>
-				<li> Item 1 </li>
-				<li> Item 2 </li>
-				<li> Item 3 </li>
-				<li> Item 4 </li>
-				<li> Item 5 </li>
+		<div class="list">
+			<ul class="items">
+				<li class="complete"></li>
+				<li class="new_item"><button class="remove">Mark Complete</button></li>
 			</ul>
 		</div>
 	</div>
