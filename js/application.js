@@ -2,7 +2,7 @@
 
 	// Validate text box, then add value in text box to list
 
-	$('#add').click(function() {
+	$('#add').click(function(event) {
 		if( $('#input_text').val().trim().length == 0 ) {
 				// alert("missing");
 				$('#error').show();
@@ -14,13 +14,22 @@
 		$('#error').hide();
 
 		};	
-	
+		event.preventDefault();
 	});
 
 	// Change class when user clicks Mark Complete button	
 
-	$('.items').on('click', '.new_item', function() {
-		$(this).closest('li').toggleClass('new_item complete');
-		$(this).remove();
+	$('.items').on('click', '.remove', function() {
+		
+		var isComplete =
+		$(this).closest('li').toggleClass('complete')
+		.hasClass("complete");
+
+		if(isComplete === false){
+			$(this).text("Mark Complete")
+		}
+		else{
+			$(this).text("Undo")
+		}
 
 	});

@@ -79,6 +79,6 @@ body{
 /*REMOVE ITEMS*/
 .items .complete{
 	text-decoration: line-through;
-    color: #999;
+    color: ghostwhite;
 
 }
