@@ -1,4 +1,4 @@
-$(document).ready(function () {
+
 
 	// Validate text box, then add value in text box to list
 
@@ -24,5 +24,3 @@ $(document).ready(function () {
 		$(this).remove();
 
 	});
-
-});
